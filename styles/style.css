@@ -1,0 +1,113 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    line-height: 1.6;
+    
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Manter a proporção do vídeo */
+  position: absolute; /* Permite que o vídeo ocupe toda a área */
+  top: 0; /* Posiciona no topo */
+  left: 0; /* Posiciona à esquerda */
+  z-index: -1; /* Coloca o vídeo atrás de outros conteúdos */
+}
+
+.welcome {
+    font-family: "Qwitcher Grypen", cursive; /* Fonte personalizada */
+    font-weight: 700; /* Peso da fonte */
+    font-style: normal; /* Estilo normal */
+    color: #ffffff; /* Cor da fonte - branco */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    position: relative; /* Posiciona no fluxo do layout */
+    z-index: 1; /* Coloca a mensagem acima do vídeo */
+    margin: 100px 0; /* Adiciona um espaço superior e inferior (opcional) */
+    font-size: 9em; /* Tamanho da fonte - ajuste conforme desejado */
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Para títulos */
+    color: #2B7A7C; /* Azul escuro */
+}
+
+a {
+    color: #2B7A7C; /* Azul escuro */
+    text-decoration: none; /* Remover sublinhado */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+button {
+    background-color: #A4D7E1; /* Azul claro */
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B2E0C6; /* Verde suave ao passar o mouse */
+}
+
+.menu {
+    list-style: none; /* Remove as marcações da lista */
+    padding: 0px; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    display: flex; /* Utiliza Flexbox para dispor os itens em linha */
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.menu li {
+   margin-top: 40px; /* Espaçamento entre os itens */
+   font-size: 18px;    
+}
+
+.menu a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #5d5555; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    border-radius: 25px; /* Bordas arredondadas */
+    transition: background-color 0.3s, transform 0.3s; /* Animação suave ao passar o mouse */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+   
+}
+
+.menu a:hover {
+    transform: scale(1.05); /* Aumento sutil de tamanho ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.2); /* Leve mudança na cor de fundo */
+   
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra ao redor do link */
+}
+
+#logo {
+    height: 100px; /* Ajuste conforme o tamanho desejado da logo */
+    transition: transform 0.3s;  
+    text-decoration: none; 
+}
+
+#logo-item {
+    margin: 0 10px; /* Espaçamento ao redor da logo */
+    
+}
+
+#logo-item:hover a {
+    transform: none; /* Aumenta ligeiramente a logo ao passar o mouse */
+    background-color: transparent; /* Remove a cor de fundo */
+    color: inherit; /* Mantém a cor original do texto */
+    box-shadow: none; /* Remove a sombra */
+}
+
+footer {
+ 
+    color: #ffffff; /* Cor do texto do footer */
+    padding: 30px 0; /* Espaçamento vertical no footer */
+}

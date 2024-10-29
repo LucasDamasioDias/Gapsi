@@ -106,6 +106,31 @@ button:hover {
     box-shadow: none; /* Remove a sombra */
 }
 
+.grupos {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* 1ª coluna: 200px (imagem), 2ª coluna: flexível (descrição) */
+    gap: 20px; /* Espaço entre as colunas */
+    padding: 20px;
+}
+
+.grupos img {
+    max-width: 100%; /* A imagem ocupará toda a largura da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+h3 {
+    margin: 0 0 10px;
+}
+
+ul {
+    list-style-type: disc; /* Formato de lista com marcadores */
+    margin-left: 20px; /* Indentação para a lista */
+}
+
+section {
+    margin-bottom: 20px; /* Espaçamento entre seções */
+}
+
 footer {
  
     color: #ffffff; /* Cor do texto do footer */

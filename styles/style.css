@@ -114,7 +114,12 @@ button:hover {
 
 .grupos img {
     max-width: 100%; /* A imagem ocupará toda a largura da coluna */
-    height: auto; /* Mantém a proporção da imagem */
+    height: 100%; /* Mantém a proporção da imagem */
+}
+
+.grupos-apoio{
+    margin-left: 19px; /* Reduz a margem esquerda para 10 pixels */
+    padding-left: 0; /* Remove o padding à esquerda, se houver */
 }
 
 h3 {
@@ -164,6 +169,12 @@ section {
 
 footer {
  
-    color: #ffffff; /* Cor do texto do footer */
+    color: #000; /* Cor do texto do footer */
+    padding: 30px 0; /* Espaçamento vertical no footer */
+}
+
+#footer {
+ 
+    color: #fff; /* Cor do texto do footer */
     padding: 30px 0; /* Espaçamento vertical no footer */
 }

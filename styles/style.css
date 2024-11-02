@@ -3,7 +3,7 @@ body {
     background-color: #FFFFFF;
     color: #333333;
     line-height: 1.6;
-    
+    padding-left: 20px;    
 }
 
 video {
@@ -110,8 +110,7 @@ button:hover {
     display: grid;
     grid-template-columns: 200px 1fr; /* 1ª coluna: 200px (imagem), 2ª coluna: flexível (descrição) */
     gap: 20px; /* Espaço entre as colunas */
-    padding: 20px;
-}
+  }
 
 .grupos img {
     max-width: 100%; /* A imagem ocupará toda a largura da coluna */
@@ -130,6 +129,38 @@ ul {
 section {
     margin-bottom: 20px; /* Espaçamento entre seções */
 }
+
+#tv {
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 50%; 
+    height: 100vh;
+    padding: 20px;
+}
+
+.beneficios {
+    margin-left: 19px; /* Reduz a margem esquerda para 10 pixels */
+    padding-left: 0; /* Remove o padding à esquerda, se houver */
+}
+
+.equipe {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Coluna de imagem (200px) e coluna de texto flexível */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    widht: 80%;
+    align-items: start; /* Alinha a imagem e o texto ao topo */
+}
+
+.equipe img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a coluna */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Evita qualquer comportamento inesperado */
+}
+
+.profissional {
+    padding: 10px; /* Espaço interno no texto */
+}
+
 
 footer {
  

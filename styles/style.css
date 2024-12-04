@@ -166,6 +166,198 @@ section {
     padding: 10px; /* Espaço interno no texto */
 }
 
+#form-cadastro {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#form-cadastro h2 {
+    text-align: center;
+    color: #2B7A7C;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #333333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #2B7A7C;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1E6263;
+}
+
+/* Estilo do formulário de login */
+#login-form {
+    max-width: 400px;
+    margin: 50px auto; /* Centraliza o formulário */
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form h2 {
+    text-align: center;
+    color: #2B7A7C;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+#login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#login-form label {
+    font-weight: bold;
+    color: #333333;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#login-form input[type="submit"] {
+    background-color: #2B7A7C;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form input[type="submit"]:hover {
+    background-color: #1E6263;
+}
+
+#login-form p {
+    text-align: center;
+    font-size: 14px;
+}
+
+#login-form p a {
+    color: #2B7A7C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#login-form p a:hover {
+    text-decoration: underline;
+}
+
+.contato {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato h1 {
+    text-align: center;
+    color: #2B7A7C;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato label {
+    font-weight: bold;
+    color: #333333;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-contato button {
+    background-color: #2B7A7C;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-contato button:hover {
+    background-color: #1E6263;
+}
+
+.informacoes-contato {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.informacoes-contato h2 {
+    color: #2B7A7C;
+    margin-bottom: 10px;
+}
+
+.informacoes-contato a {
+    color: #2B7A7C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.informacoes-contato a:hover {
+    text-decoration: underline;
+}
 
 footer {
  

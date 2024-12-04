@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Gapsi Global</title>
@@ -32,7 +32,7 @@
             <h1>Fale Conosco</h1>
             <p>Estamos prontos para te ouvir! Preencha o formulário abaixo ou entre em contato diretamente através do e-mail ou telefone.</p>
             
-            <form action="envia_contato.php" method="POST" class="form-contato">
+            <form action="scripts/php/salvar_contato.php" method="POST" class="form-contato">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -57,7 +57,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 GApsi Global - Todos os direitos reservados.</p>
+        <p>&copy; 2024 Gapsi Global - Todos os direitos reservados.</p>
     </footer>
+
+<script src="scripts/js/script_contato.js"></script>
 </body>
 </html>

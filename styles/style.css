@@ -359,6 +359,37 @@ form input[type="submit"]:hover {
     text-decoration: underline;
 }
 
+.erro-campo {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+/* Estilo para mensagens de erro */
+.erro {
+    margin-top: 5px;
+    color: red;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.icone-links {
+    display: flex; /* Alinha os ícones horizontalmente */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 20px; /* Espaço entre os ícones */
+    margin-top: 20px; /* Espaço acima da seção */
+}
+
+.icone-links a img {
+    width: 50px; /* Tamanho aceitável dos ícones */
+    height: 50px;
+    border-radius: 50%; /* Mantém o formato circular */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.icone-links a img:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+
 footer {
  
     color: #000; /* Cor do texto do footer */

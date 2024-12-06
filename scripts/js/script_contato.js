@@ -27,7 +27,10 @@ document.querySelector(".form-contato").addEventListener("submit", function (eve
         mostrarErro(nome, "Por favor, preencha este campo.");
         formValido = false;
     } else if (!/^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/.test(nome.value)) {
-        mostrarErro(nome, "O nome deve conter apenas letras.");
+        mostrarErro(nome, "O nome deve conter apenas letras e espaços.");
+        formValido = false;
+    } else if (nome.value.length > 100) {
+        mostrarErro(nome, "O nome não pode exceder 100 caracteres.");
         formValido = false;
     }
 
@@ -42,10 +45,16 @@ document.querySelector(".form-contato").addEventListener("submit", function (eve
     if (!assunto.value.trim()) {
         mostrarErro(assunto, "Por favor, preencha este campo.");
         formValido = false;
+    } else if (assunto.value.length > 150) {
+        mostrarErro(assunto, "O assunto não pode exceder 150 caracteres.");
+        formValido = false;
     }
 
     if (!mensagem.value.trim()) {
         mostrarErro(mensagem, "Por favor, preencha este campo.");
+        formValido = false;
+    } else if (mensagem.value.length < 10) {
+        mostrarErro(mensagem, "A mensagem deve conter pelo menos 10 caracteres.");
         formValido = false;
     } else if (mensagem.value.length > 500) {
         mostrarErro(mensagem, "A mensagem não pode exceder 500 caracteres.");

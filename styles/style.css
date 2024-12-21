@@ -4,7 +4,10 @@ body {
     color: #333333;
     line-height: 1.6;
     padding-left: 20px;    
-}
+    height: 100%;
+    display: flex;
+    flex-direction: column;    
+ }
 
 video {
   width: 100%;
@@ -14,6 +17,7 @@ video {
   top: 0; /* Posiciona no topo */
   left: 0; /* Posiciona à esquerda */
   z-index: -1; /* Coloca o vídeo atrás de outros conteúdos */
+  margin: 0;
 }
 
 .welcome {
@@ -83,9 +87,30 @@ button:hover {
 
 .menu a:hover {
     transform: scale(1.05); /* Aumento sutil de tamanho ao passar o mouse */
-    background-color: rgba(255, 255, 255, 0.2); /* Leve mudança na cor de fundo */
-   
+    background-color: rgba(255, 255, 255, 0.2); /* Leve mudança na cor de fundo */   
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra ao redor do link */
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333333;
+    cursor: pointer;
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 15px; /* Centraliza na parte inferior */
+    left: 50%; /* Posiciona no centro horizontal */
+    transform: translateX(-50%); /* Centraliza com base no meio do botão */
+    z-index: 10;
+}
+
+/* Estilização adicional para o botão (opcional) */
+#menu-toggle:focus {
+    outline: none;
+}
+#menu-toggle:hover {
+    color: #555; /* Mudança de cor ao passar o mouse */
 }
 
 #logo {
@@ -390,14 +415,79 @@ form input[type="submit"]:hover {
     transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }
 
-footer {
- 
+footer { 
     color: #000; /* Cor do texto do footer */
-    padding: 30px 0; /* Espaçamento vertical no footer */
+    margin-top: 30px;
+    padding: 0;
+ }
+
+#footer { 
+    color: #fff; /* Cor do texto do footer */
+    padding:  0; /* Espaçamento vertical no footer */
+ }
+
+@media (max-width: 768px) {
+    /* Exibir o botão "hambúrguer" em telas pequenas */
+    #menu-toggle {
+        display: block;
+        background-color: #333;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #fff;
+        position: fixed;
+        bottom: 20px; /* Distância da parte inferior da tela */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajusta para o centro exato */
+        padding: 10px 20px;
+        border-radius: 50px; /* Para dar um visual arredondado */
+        z-index: 10;
+    }
+
+    /* Menu oculto inicialmente */
+    .menu {
+        display: none;
+    }
+
+    /* Exibir o menu quando a classe .menu-mobile é adicionada */
+
+    .menu.menu-mobile {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 70px; /* Posiciona o menu acima do botão */
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza o menu horizontalmente */
+        width: 90%; /* Ajuste o tamanho do menu, se necessário */        
+        padding: 10px 0;       
+        z-index: 9; /* Certifique-se de que o menu aparece abaixo do botão */
+    }
+
+    .menu.menu-mobile li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu.menu-mobile a {
+        color: #000;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    /* Ocultar logo em telas pequenas */
+    #logo-item {
+        display: none;
+    }
+  
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
 }
 
-#footer {
- 
-    color: #fff; /* Cor do texto do footer */
-    padding: 30px 0; /* Espaçamento vertical no footer */
 }
+

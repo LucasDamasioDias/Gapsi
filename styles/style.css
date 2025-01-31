@@ -426,6 +426,33 @@ footer {
     padding:  0; /* Espaçamento vertical no footer */
  }
 
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .grupo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grupo img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .grupo .descricao {
+        width: 100%;
+    }
+
+    .grupos {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
 @media (max-width: 768px) {
     /* Exibir o botão "hambúrguer" em telas pequenas */
     #menu-toggle {
@@ -434,7 +461,7 @@ footer {
         border: none;
         font-size: 1.5em;
         cursor: pointer;
-        color: #fff;
+        color: #2B7A7C;
         position: fixed;
         bottom: 20px; /* Distância da parte inferior da tela */
         left: 50%; /* Centraliza horizontalmente */
@@ -451,7 +478,7 @@ footer {
 
     /* Exibir o menu quando a classe .menu-mobile é adicionada */
 
-    .menu.menu-mobile {
+    .menu.menu-mobile {        
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -468,7 +495,8 @@ footer {
         text-align: center;
     }
 
-    .menu.menu-mobile a {
+    .menu.menu-mobile a {        
+        background-color: #2B7A7C;
         color: #000;
         text-decoration: none;
         font-size: 1.2em;
@@ -489,5 +517,106 @@ video {
     z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
 }
 
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .grupo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grupo img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .grupo .descricao {
+        width: 100%;
+        padding: 10px;
+    }
+
+ nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+.grupos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grupos img {
+        width: 90%;
+    }
+
+    #form-cadastro {
+        width: 90%;
+    }
+
+    #login-form {
+        width: 90%;
+    }
+
+ .contato {
+        width: 90%;
+    }
+
+    /* Ajusta os ícones sociais */
+    .icone-links {
+        flex-wrap: wrap;
+    }
+
+    .icone-links img {
+        width: 35px;
+        height: 35px;
+    }
+
+    main {
+        width: 90%;
+        padding: 15px;
+    }
 }
+
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    .grupos {
+        padding: 10px;
+    }
+
+    .grupos img {
+        width: 100%;
+    }
+
+#recuperar-senha {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="email"],
+    input[type="submit"] {
+        font-size: 16px;
+    }
+
+ #redefinir-senha {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="password"],
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
+
 

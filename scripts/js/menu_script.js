@@ -1,10 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Seleciona o botão e o menu
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.querySelector('.menu');
+    const overlay = document.querySelector('.menu-overlay');
 
-    // Adiciona o evento de clique
     menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('menu-mobile');
+        const isMenuOpen = menu.classList.toggle('menu-mobile'); // Alterna o menu
+
+        if (isMenuOpen) {
+            overlay.classList.add('menu-overlay'); // Adiciona classe para exibir
+            overlay.style.display = 'block';
+        } else {
+            overlay.classList.remove('menu-overlay'); // Remove a classe
+            overlay.style.display = 'none';
+        }
     });
 });
+

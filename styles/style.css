@@ -92,18 +92,20 @@ button:hover {
 }
 
 #menu-toggle {
-    display: none;
-    font-size: 24px;
-    background: none;
+    display: block;
+    background-color: #333;
     border: none;
-    color: #333333;
+    font-size: 1.5em;
     cursor: pointer;
-    position: fixed; /* Fixa o botão na tela */
-    bottom: 15px; /* Centraliza na parte inferior */
-    left: 50%; /* Posiciona no centro horizontal */
-    transform: translateX(-50%); /* Centraliza com base no meio do botão */
+    color: #2B7A7C;
+    position: fixed;
+    top: 5px; /* Distância do topo da tela */
+    right: 5px; /* Distância da direita */
+    padding: 10px 20px;
+    border-radius: 50px; /* Para dar um visual arredondado */
     z-index: 10;
 }
+
 
 /* Estilização adicional para o botão (opcional) */
 #menu-toggle:focus {
@@ -463,9 +465,8 @@ footer {
         cursor: pointer;
         color: #2B7A7C;
         position: fixed;
-        bottom: 20px; /* Distância da parte inferior da tela */
-        left: 50%; /* Centraliza horizontalmente */
-        transform: translateX(-50%); /* Ajusta para o centro exato */
+        top: 5px; /* Distância do topo da tela */
+        right: 5px; /* Distância da direita */
         padding: 10px 20px;
         border-radius: 50px; /* Para dar um visual arredondado */
         z-index: 10;
@@ -476,28 +477,44 @@ footer {
         display: none;
     }
 
-    /* Exibir o menu quando a classe .menu-mobile é adicionada */
+    .menu-overlay {
+        display: none; /* Inicia oculto */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #B1CEC4;
+        z-index: 8; /* Um nível abaixo do menu */
+    }
 
-    .menu.menu-mobile {        
+    /* Exibir o menu quando a classe .menu-mobile é adicionada */
+    .menu.menu-mobile {
         display: flex;
         flex-direction: column;
         position: fixed;
         bottom: 70px; /* Posiciona o menu acima do botão */
         left: 50%;
         transform: translateX(-50%); /* Centraliza o menu horizontalmente */
-        width: 90%; /* Ajuste o tamanho do menu, se necessário */        
-        padding: 10px 0;       
+        width: 90%; /* Ajuste o tamanho do menu, se necessário */
+        padding: 10px 0;
         z-index: 9; /* Certifique-se de que o menu aparece abaixo do botão */
+        background-color: #93C2B1;
+        box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3), inset -4px -4px 8px rgba(0, 0, 0, 0.3);
     }
 
     .menu.menu-mobile li {
         margin: 10px 0;
         text-align: center;
+        background-color: #2B7A7C;
+        border-radius: 25px;
+        margin-left: 8px;
+        margin-right: 8px;        
     }
 
     .menu.menu-mobile a {        
-        background-color: #2B7A7C;
-        color: #000;
+        
+        color: #fff;
         text-decoration: none;
         font-size: 1.2em;
     }
@@ -506,16 +523,23 @@ footer {
     #logo-item {
         display: none;
     }
+
+    #logo {
+        margin-top: 50px;
+        box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3), inset -4px -4px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        padding: 10px;
+    }
   
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
-}
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
+    }
 
     body {
         font-size: 14px;
@@ -524,6 +548,23 @@ video {
     .container {
         width: 100%;
         padding: 5px;
+    }
+
+    #tv {
+        width: 100%;
+        max-width: 300px;
+        max-height: 300px;       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -25px;
+        margin-bottom: -25px;
+    }
+
+    .equipe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .grupo {
@@ -582,6 +623,10 @@ video {
     main {
         width: 90%;
         padding: 15px;
+    }
+
+    p {
+        padding-top: 15px;
     }
 }
 
